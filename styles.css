@@ -1,0 +1,292 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden-div {
+    display: none;
+}
+
+.content-loaded {
+    overflow: visible;
+}
+/* Preloader Styles */
+
+
+
+  
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Add this to your existing CSS file */
+/* Add this to your existing CSS file */
+nav ul li {
+    display: inline;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s ease; /* Add transition effect for smooth color change */
+}
+
+a::after {
+    content: attr(data-text); /* Set the content to the data-text attribute */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    color: #FFE227; /* Color of the new text */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Add transition effects */
+}
+
+nav ul li:hover a {
+    color: transparent; /* Make the original text transparent on hover */
+}
+
+nav ul li:hover a::after {
+    opacity: 1; /* Make the new text visible on hover */
+    transform: translateY(-30px); /* Move the new text upwards on hover */
+}
+
+
+
+section, footer {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#welcomeH2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* Add this to your existing CSS file */
+/* Add this to your existing CSS file */
+/* Add this to your existing CSS file */
+/* Add this to your existing CSS file */
+/* Add this to your existing CSS file */
+#about {
+    height: 70vh;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px; /* Adjust the padding values as needed */
+}
+
+#name {
+    display: inline;
+    margin: 0;
+    color: yellow;
+}
+
+p {
+    color: white;
+    margin: 10px 0;
+}
+
+#about-Paragraph {
+    margin-bottom: 1.8rem;
+}
+
+#downloadButton {
+    font-weight: bold;
+    height: 40px;
+    width: 200px;
+    background-color: #FFE227;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#downloadButton:hover {
+    background-color: #FFD100;
+}
+
+#downloadButton:active {
+    transform: translateY(2px);
+}
+
+.image-container {
+    flex: 5; /* Move the image container to the right */
+    max-width: 400px;
+    /* Adjust the padding-left value as needed */
+    padding-right: 200px; /* Adjust the padding-right value as needed */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make the image round */
+    border: 4px solid #FFE227; /* Initial border color for the image */
+    transition: border-color 0.3s ease; /* Add transition effect */
+}
+
+
+#projects {
+    height:fit-content;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.box-container {
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+    padding: 65px;
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.5s ease; /* Add transition for smooth color change and animation */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: slideIn 0.5s ease; /* Apply the slide-in animation */
+}
+
+.box:hover {
+    border: 2px solid #FFE227;
+    transform: translateY(-5px);
+}
+
+/* @keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
+
+
+
+
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#project-details {
+    display: none;
+    border: 2px solid #FFFFEC;
+    color: #C6A969;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 650px; /* Adjust the maximum width as needed */
+    animation: fadeInFromTop 0.5s ease; /* Apply the fade-in animation */
+}
+
+
+
+.box i {
+    font-size: 1.7rem; /* Adjust the size as needed */
+}
+
+.box h5 {
+    color: #FFE227;
+}
+ 
+
+
+#contact {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.tabs {
+    flex-direction: column; /* Adjusted to column for smaller screens */
+    align-items: center; /* Centered content for smaller screens */
+    margin-top: 55px;
+}
+
+#part1 {
+    margin-left: 30rem;
+}
+
+#phone, #email, #location {
+    height: auto; /* Adjusted for responsive height */
+    width: 25rem; /* Adjusted width for smaller screens */
+    border-radius: 8px;
+}
+
+#github, #linkedin, #instagram {
+    padding: 10px; /* Adjusted padding for smaller screens */
+    font-size: 20px; /* Adjusted font size for smaller screens */
+}
+
+.social-icons {
+    flex-direction: column; /* Adjusted to column for smaller screens */
+    align-items: center; /* Centered content for smaller screens */
+}
+
+#phone, #email, #location {
+    transition: border-color 0.3s ease;
+}
+
+#phone:hover, #email:hover, #location:hover {
+    border: 2px dotted #FFE227;
+}
+
+
+#github, #linkedin, #instagram {
+    transition: border-color 0.3s ease;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 30px;
+}
+
+#github:hover, #linkedin:hover, #instagram:hover {
+    border: 2px solid #FFE227;
+}

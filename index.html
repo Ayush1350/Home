@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="lodingScreen.css">
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script defer src="script.js"></script>
+  <title>AYUSH Portfolio</title>
+</head>
+<body>
+  <!-- Preloader -->
+  
+  <div class="loading-container" id="loading-container">
+    <div class="loading-text">
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </div>
+  </div>
+
+  <!-- Your existing content -->
+
+  <div class="hidden-div">
+
+    <nav>
+      <ul>
+        <li><a href="#home" data-text="Home" id="Home">Home</a></li>
+        <li><a href="#about" data-text="About" id="About">About</a></li>
+        <li><a href="#projects" data-text="Projects" id="Projects">Projects</a></li>
+        <li><a href="#contact"  data-text="Contact" id="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    
+  
+    <section id="home">
+      <h2 id="welcomeH2">Welcome to My Portfolio</h2>
+      <!-- Add your content here -->
+    </section>
+  
+    <section id="about">
+      <div class="about-content">
+        <div class="text-content">
+          <h2>
+            Hey folks, I'm
+            <p id="name">AYUSH PATEL</p>
+          </h2>
+          <p id="about-Paragraph">
+            Building a successful product is a challenge. I am highly energetic
+            in user experience design, interfaces, and web development.
+          </p>
+          <button
+            id="downloadButton"
+            onclick="window.location.href='https://1drv.ms/b/s!AlkrkvVY9wuIjG6-DCYRk3WE4B9d?e=tH7JP5'"
+          >
+            <i class="fas fa-file"></i> Download Resume
+          </button>
+        </div>
+        <div class="image-container">
+          <img src="./AYUSH.JPG" alt="Ayush Patel" />
+        </div>
+      </div>
+    </section>
+  
+    <section id="projects">
+      <h1>Coding Adventures</h1>
+      <h3>Click To Check!!</h3>
+  
+      <div class="box-container">
+        <div class="box" data-project="JavaScript">
+          <i class="fa-solid fa-laptop"></i>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="box" data-project="HTMLCSS">
+          <i class="fa-solid fa-laptop"></i>
+          <h4>HTML & CSS</h4>
+        </div>
+        <div class="box" data-project="Java">
+          <i class="fa-brands fa-java"></i>
+          <h4>JAVA</h4>
+        </div>
+        <div class="box" data-project="Kotlin">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h4>KOTLIN</h4>
+        </div>
+      </div>
+  
+      <div id="project-details"></div>
+    </section>
+  
+    <footer>
+      <section id="contact">
+        <h2>Contact Me</h2>
+  
+        <div class="tabs">
+          <div  id="part1">
+            
+              <div id="phone"><p><strong>Phone:</strong> +91 9408157601</p></div>
+              <div id="email"><p><strong>Email:</strong> ayushpatel2492002@gmail.com</p></div>
+              <div id="location"><p><strong>Location:</strong> Himmatnagar, India</p></div>
+            
+          </div>
+        
+  
+          <div  id="part2">
+            <div class="social-icons">
+              <i class="fa-brands fa-github" id="github"></i>
+              <i class="fa-brands fa-linkedin" id="linkedin"></i>
+              <i class="fa-brands fa-instagram" id="instagram"></i>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add any additional contact form or map if needed -->
+      </section>
+    </footer>
+
+  </div>
+ 
+</body>
+</html>
